@@ -1,14 +1,14 @@
 # Bus_Booking_System
 
-###Program Overview: 
+### Program Overview: 
 You are tasked with creating a Python program that simulates a bus booking system for 50 passengers. The system 
-should allow passengers to book and cancel seats, applying discounts and cashbacks based on the timing of the booking 
-and cancellation. The application will run in the terminal, and no graphical user interface is required. 
+should allow passengers to book and cancel seats, applying discounts and cashback based on the timing of the booking 
+and cancellation. The application will run in the terminal; no graphical user interface is required. 
  
 ### Requirements: 
 1. Seat Reservation: 
    - The bus has a total of 50 seats available for reservation. 
-   - Each seat can be booked or canceled by passengers. 
+   - Passengers can book or cancel each seat. 
  
 2. Booking System: 
    - Booking a Week Before the Trip: 
