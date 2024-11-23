@@ -108,7 +108,30 @@ def action_on_menu():
 
     elif User_choice_input == "2":
         print("You chose to Cancel a Booking.")
-      
+        user_id_input= int(input("Please enter your Booking ID: "))
+        if user_id_input  in BookedList:
+            confirm_cancellation= input("Do you really wish to cancel the ticket? [Y/N]: ")
+            if confirm_cancellation == "Y" or"y":
+                print("Booking Cancel under process.......")
+                BookedList.remove(BookingID)
+                # print(BookingID)
+                print(f"{BookingID} Ticket Cancelled. ")
+                print("Thankyou for using RAB Booking Services")
+                print("************************")
+            elif confirm_cancellation =="N" or"n":
+                print("Great! Have a great trip!")  
+                print_menu()
+                action_on_menu()    
+            else:
+                print("No such input")
+                print_menu()
+                action_on_menu()   
+        elif user_id_input not in BookedList:
+            print("No such Booking Id present. Please enter a valid Booking ID .")
+            print("----------------------------------------------")
+        else:
+            print("No such value.")
+
 
     elif User_choice_input == "3":
         BookingIDenter = int(input("Enter your BookingID: "))
