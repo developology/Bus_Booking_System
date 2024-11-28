@@ -7,10 +7,10 @@ PricePerTicket = 100
 BookedList = []
 
 user_choice = {
-    "1": "Book a seat",
-    "2": "Cancel a Booking",
-    "3": "View seat Status",
-    "4": "Exit"
+    "1": "1- Book a seat",
+    "2": "2- Cancel a Booking",
+    "3": "3- View seat Status",
+    "4": "4- Exit"
 }
 
 def print_menu():
